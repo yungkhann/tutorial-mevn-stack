@@ -2,7 +2,7 @@ const express = require('express')
 const mongodb = require('mongodb')
 const router = express.Router()
 
-const mongoUrl = `mongodb+srv://user:user@cluster0.advi9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+const mongoUrl = `mongodb+srv://user:<password>@cluster0.advi9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 router.get('/', async (req, res) => {
     const posts = await loadPostsCollection();
